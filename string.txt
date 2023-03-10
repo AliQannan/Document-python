@@ -1,0 +1,199 @@
+#                       ##################string1 ##########
+
+from itertools import count
+from msilib.schema import Shortcut
+from random import randint, random
+from unicodedata import decimal
+from matplotlib.pyplot import hot
+print('###################string1 ##########')
+x='0123456789101112'
+print('x[0] =',x[0],'x[5] =',x[5],'x[-1] =',x[-1],'x[-5] =',x[-5],'print the string acount the number between the blocks')
+        ######### print string more than 1 (one) #####
+print(x*3,'     so its repeat the string acount the number')############repeat the string acount the number
+#############group of string 
+print('x[4:12]=',x[4:12],'      x[start , final]so its print number start and dont print final')
+######print all######
+print('x[:]=',x[:],'        so print all string in vairable')
+print('x[:12]=',x[:12],'       print from start with zero without  final number ')
+print('x[4:]=',x[4:],'      print from start with four and final number  is all string after start and if final equal nothing its print all string after start number')
+
+
+
+
+                #########################\\\\\\\\\string2########
+print('####\\\\\\\\\string2########')
+print('x[4:12:2]=',x[4:12:2],'      x[start , final]so its print number start and dont print final and its jump one number and print next')
+print('x[4:12:3]=',x[4:12:3],'      x[start , final]so its print number start and dont print final and its jump two number and print next')
+print('x[4:12:3]=',x[4::2],'        x[start , final]so its print number start and  print final and its jump one number and print next')
+print('x[::2]=',x[::2],'        so print all string in vairable and its jump  one string and print next')
+print('x[-1:4:-1]=',x[-1:4:-1],'        so print the start and dont print the final and write from right to left (versa) ')
+print('x[::-1]=',x[::-1],'      so print the all string and write from right to left (versa) ')
+print('list(x)=',list(x),'      so print string between the ,'', ')
+print('set(x)=',set(x),'        so print string between the ,'',  but without repeat')
+print('set(x)=',sorted(x),'     so print string between the ,'',  from low number to the highest number and from first string to the final string')
+print('sorted(set(x))=',sorted(set(x)),'        so print string between the ,'',  but without repeat from low number to the highest number and from first string to the final string')
+print('x.split('')=',x.split('1'),'         its delet the string 1 and make it pr and after it pr for all pr')
+print('x.splitlines()=',x.splitlines(),'        if you have a big pr and you need to delet lines')
+
+
+
+                    ######string 3 ##############********************************
+print('######string 3 ##############********************************')
+print("x.partition(string)=",x.partition('1'),'     its print the 5 and make befor it pr and after it pr for just on string form left')
+print("x.rpartition(string)=",x.rpartition('1'),'       its print the 5 and make befor it pr and after it pr for just on string form right')
+print('x.find(string) =',x.find('1'),'      print eara number from left')
+print('x.rfind(string) =',x.rfind('1'),'        print eara number from right but you dont count from right never')
+print('if x.find(string) = -1 that mean the string dont found on pr or vairable     ',x.find('o'))
+print('x.index(string) =',x.index('1'),'        print eara number from left    (index = left find)')
+print('x.endwith(word or str)=',x.endswith('2'),'     if endwith string = 2 print true if not at end fales')
+print('x.startwith(word or str)=',x.startswith('2'),'   if startwith string = 2 print true if not at first fales')
+
+print('x.replace(old word or str,new word or str)=',x.replace('1','2') ,'       replace the string on pr')
+print('x.count(string)=',x.count('2'), '        its print the number str from left')
+w='hello world'
+print('w.capitalize()=',w.capitalize(),'print and make first string capital on pr')
+print('w.title()=',w.title(),'      print and make first string capital for all word in pr')
+print('w.upper()=',w.upper(),'   print and make all string capital for all word in pr')
+print('w.swapcase()=',w.swapcase(),'   print and make  small string  to capital for all word in pr and capital to small ')
+print('w.center(number spaces)',w.center(50),'its make speces befor pr and after acount the number  spaces( make pr in maidal)')
+
+
+
+
+            ################################string4####
+print('################################string4####')
+print('x.ljust(number)=',x.ljust(50),'*print  the text on left then print spaces on right(محاذاة على الشمال) and sum all string and spaces=50')
+print(x.ljust(50,'*'))
+print('x.rjust(number)=',x.rjust(50),'*print  the text on  right then print spaces on left(محاذاة على اليمين)')
+print(x.rjust(50,'*'),'     sum string and spaces or stars = 50')
+print('x.zfill(number of zero)=',x.zfill(20), '    put zero on left when become all string = number of zero its stop')
+print('x.isalpha(string you want delet)=',w.isalpha(),'you must be all string not number or symbols or spaces and answare is true or false ')
+print('x.strip()=',x.strip(),'delet all speces befor and after pr')
+print(x.strip())
+print('x.lstrip()=',x.lstrip(),'delet all speces befor  pr')
+print(x.lstrip())
+print('x.rstrip()=',x.rstrip(),'delet all speces after  pr')
+print(x.rstrip())
+print('delet string what you want befor or after or togther pr')
+print(x.strip('*'))
+print(x.lstrip('*'))
+print(x.rstrip('*'))
+
+                        ###################string(5)###########
+print('###################string(5)###########  %, From the strange letters in python')
+print('line \nnew line')
+print('dir sear \nI would like tell you something')########New line
+print(r'c:\windoes\newfolder')#######Ignores \n and print pr 
+print('c:\\windoes\\newfolder')
+print('word\ttab')##########tab or \t\t\t
+print('three\t\t\ttabe')
+pr=''' ali have agood day, so he will play football to day
+and he will go to learn anew python coded
+thank you for all.'''
+print(pr.splitlines())#####print more than one line use ''' ''' or """ """" and I can use function the pr.splitlines() to write all pr in one line 
+h='ali ibhem'
+o='qannan'
+print(h,o)
+print(h,end='')#without specec between varibale and dont print the second line 
+print(o)
+print(r'% From the strange letters in Python.')
+m='ali'
+c=m.rjust(10,'*')
+f='gaza'
+name='my name is %s from %s'%(c,f)
+print('name=',name)
+decimal='when I need to put decimal or int or str or float number writer the%05d,%05i,%06f'%(11.5,  10    ,   9.3) 
+#int number of speces and zero replace with specec number
+print(decimal)
+print('I\'marooco') # when I need write ' write \ befor it
+print("I'am marooco")# or write ""
+print('"yes Iam ali"') # when I want write ""write '
+print("\"yes,\" he said")
+print('"Isn\'t","she said')
+
+
+
+                ##############string6################
+print('##############string6################')
+number='458'
+lettars='Ali play foot ball'
+print(number.isdigit())########asked  if the pr is digit
+print('lettars.isupper()',lettars.isupper())########asked  if the all sting in pr is capital
+print('lettars.islower()',lettars.islower())########asked  if the all sting in pr is small
+print('lettars.istitle()',lettars.istitle())########asked  if the first sting in pr is capital for all word in pr
+print('lettars.isdecimal()',number.isdecimal())########asked  if the all sting in pr is decimal
+print('x.endwith(word or str)=',x.endswith('2'),'     if endwith string = 2 print true if not at end fales')
+print('x.startwith(word or str)=',x.startswith('2'),'   if startwith string = 2 print true if not at first fales')
+print('Function join')
+lettars1='is freind of '.join(('ali ','mohmed ','basema '))#when I want write word between name or word
+print(lettars1)
+print('*\n'.join (('ali' , 'basema' , 'adham')))#####to write the string on the new pr 
+print(' '.join (('ali' , 'basema' , 'adham'))) #make spaces between word
+print('The main or important thing in function join is  Add random numbers')
+import numpy as np
+join=' '.join([str(i) for i in np.random.randint(10, size=100)])
+print(join)
+g0=join.count('0')
+
+g1=join.count('1')
+g2=join.count('2')
+g3=join.count('3')
+g4=join.count('4')
+g5=join.count('5')
+g6=join.count('6')
+g7=join.count('7')
+g8=join.count('8')
+g9=join.count('9')
+print('the sum count for number =',g0+g1+g2+g3+g4+g5+g6+g7+g8+g9)
+
+
+            ##############string7################
+print('##############string7############(libary numpy####')
+
+        ########function format#######
+letters2="The value of pi is {}".format(np.pi)#######replace blocks t o pi number = 22/7  or  3.14
+p='the vlause is %f'%np.pi
+print(p)
+
+print('letters2=',letters2)
+print(r'function format write like that "strings{} ".format(libary.function)')
+print(letters2.format(np.pi))
+                        #########
+print(r' or like that function format write like that "strings{1},{0} ".format("string 0","string 1") or variblas')                        
+print("{0} and {1} ".format('ali','mohmed'))######replace blocks to word 
+
+print("{1} and {0} ".format('ali','mohmed'))
+print('ali is very %s and %s '%('b','smart'))##### to  know differnce between the format and %s
+print('ali is very {0} and {1}'.format('butty','smart'))
+print(r' or like that function format write like that "First{first},{last} ".format({last="l"}.{first="f"})') 
+print("First:{first},last:{last} ".format(last="l",first="f")) #to make Shortcut
+print(r' or like that function format write like that "pi={:.3f} ".format(np.pi)') 
+print("pi={0:.3f} ".format(np.pi))####when I want write the  Specific number after the point in float type
+print("pi={0:.3f} ".format(123456789.1251251))
+print(r'" {:data type } ali I have {:data type } years old ".format("word acount data type","word acount data type"')
+print(" {:s} ali I have {:d} years old ".format("I'm ",20))
+print(r' or like that function format write like that ',r"'|' + '{:^number of string to be center}'.format('Hello') + '|'")
+center='|' + '{0:^51}'.format('Hello') + '|'
+center1='*'+'{:^30} ali is v'.format("kali")+'*'
+print(center1)
+print(center)
+
+print(r' or like that function format write like that "\'{0:10} ==> {1:10d}\'.format(\'name\', 56322)') 
+print('{0:.2} ==> {1:.2}'.format('name', '56322'))
+print('{0:.3} ==> {1:2}'.format('name', 56322))
+                ######libary for string called re
+import re
+print('function compile control in format text or letters    re .compile("\\all word +stop when find @ \\all word stop when show the . after all letters from a to z  just 3 letters"')
+email=re.compile('\w+@\w+\.[a-z]{3}')
+text = "To email Guido, try guido@python.org or guido@google.com"
+print(email.findall(text))
+gmail=re.compile('\w+@\w+.{4}')
+print(gmail.findall(text))
+import re 
+hotmail= re.compile('\w+@\w+.[a-z]{3}')
+
+print(hotmail.findall(text))
+
+
+
+
